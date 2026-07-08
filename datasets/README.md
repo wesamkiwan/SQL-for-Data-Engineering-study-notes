@@ -118,6 +118,7 @@ psql "your-connection-string" -f datasets/postgres/02_reset.sql
 | [`postgres/00_schema.sql`](postgres/00_schema.sql) | Creates the schema, tables, keys, and constraints |
 | [`postgres/01_seed_data.sql`](postgres/01_seed_data.sql) | Generates reproducible sample data |
 | [`postgres/02_reset.sql`](postgres/02_reset.sql) | Drops everything so you can rebuild from scratch |
+| [`postgres/03_web_events_addon.sql`](postgres/03_web_events_addon.sql) | Adds a `web_events` table with JSONB payloads — only needed for [02-intermediate-advanced-sql/06-json-and-semistructured-data](../02-intermediate-advanced-sql/06-json-and-semistructured-data/) |
 
 Later modules (cloud platforms, JSON/semi-structured data) include their own small add-on
 scripts that build on top of this same schema — they'll tell you exactly when to run them.
